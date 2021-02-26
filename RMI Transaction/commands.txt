@@ -1,0 +1,9 @@
+javac *.java
+rmic TransactC
+
+In case you're using
+Linux: rmiregistry &
+Windows: start rmiregistry
+
+In Linux, in case Port 1099 is already occupied,
+fuser -k 1099/tcp
